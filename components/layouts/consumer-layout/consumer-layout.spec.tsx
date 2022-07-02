@@ -5,7 +5,7 @@ import { ConsumerLayout } from "./consumer-layout";
 describe("consumer-layout", () => {
   it("renders with a title and a child", () => {
     render(
-      <ConsumerLayout title="This is a test">
+      <ConsumerLayout title="This is a test" description="This is a test">
         <p>I am a paragraph</p>
       </ConsumerLayout>
     );

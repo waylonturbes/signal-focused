@@ -7,7 +7,14 @@ const Home: NextPageWithLayout = () => {
 };
 
 Home.getLayout = function getLayout(page: ReactElement) {
-  return <ConsumerLayout>{page}</ConsumerLayout>;
+  return (
+    <ConsumerLayout
+      title="Signal Focused - Home"
+      description="See through the chaos with Signal Focus. Find articles on gaming, fantasy football, coding, cooking, and more here."
+    >
+      {page}
+    </ConsumerLayout>
+  );
 };
 
 export default Home;
