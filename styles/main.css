@@ -13,6 +13,6 @@
 
 @layer components {
   .nav-link {
-    @apply text-orange-500 dark:text-orange-500;
+    @apply font-semibold transition-all duration-150 hover:text-orange-800 hover:dark:text-orange-500;
   }
 }
