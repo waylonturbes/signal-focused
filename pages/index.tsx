@@ -1,4 +1,4 @@
-import { ConsumerLayout } from "@components/index";
+import { ConsumerLayout } from "@components";
 import type { NextPageWithLayout } from "./_app";
 import type { ReactElement } from "react";
 
