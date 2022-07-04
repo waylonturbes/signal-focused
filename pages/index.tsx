@@ -4,12 +4,12 @@ import type { ReactElement } from "react";
 
 const Home: NextPageWithLayout = () => {
     return (
-        <div>
-            <h1 className="text-center text-8xl font-black">
+        <>
+            <h1 className="text-center text-6xl sm:text-7xl lg:text-8xl font-black pt-32 pb-12 px-6">
                 Seeing Through
                 <br /> the <span className="text-chaos-gradient">Chaos</span>
             </h1>
-        </div>
+        </>
     );
 };
 

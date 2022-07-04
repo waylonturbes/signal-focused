@@ -10,7 +10,7 @@
         font-family: Inter, system-ui, sans-serif;
     }
     body {
-        @apply bg-signal-focused-background-light dark:bg-signal-focused-background-dark text-slate-900 dark:text-slate-50;
+        @apply bg-cover bg-center bg-signal-focused-background-light dark:bg-signal-focused-background-dark text-slate-900 dark:text-slate-50;
     }
 }
 
