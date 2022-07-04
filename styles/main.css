@@ -6,11 +6,20 @@
 @tailwind utilities;
 
 @layer base {
+    * {
+        @apply focus:outline-1 outline-offset-4;
+    }
     html {
         font-family: Inter, system-ui, sans-serif;
     }
     body {
         @apply bg-cover bg-center bg-signal-focused-background-light dark:bg-signal-focused-background-dark text-slate-900 dark:text-slate-50;
+    }
+    select {
+        @apply font-semibold appearance-none bg-none;
+    }
+    option {
+        @apply font-semibold rounded-md border-slate-200 dark:border-slate-700;
     }
 }
 
