@@ -10,7 +10,7 @@
         font-family: Inter, system-ui, sans-serif;
     }
     body {
-        @apply bg-signal-focused-background-light dark:bg-signal-focused-background-dark;
+        @apply bg-signal-focused-background-light dark:bg-signal-focused-background-dark text-slate-900 dark:text-slate-50;
     }
 }
 
@@ -19,9 +19,6 @@
         @apply bg-clip-text text-transparent bg-gradient-to-r from-red-500 dark:from-red-400 to-orange-500 dark:to-orange-400;
     }
     .nav-link {
-        @apply font-semibold transition-all duration-150;
-    }
-    .nav-link:hover {
-        @apply text-chaos-gradient;
+        @apply font-semibold transition-colors duration-200 ease-linear hover:text-orange-600 hover:dark:text-orange-400;
     }
 }

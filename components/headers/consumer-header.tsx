@@ -10,7 +10,12 @@ interface ConsumerHeaderProps {}
  */
 const ConsumerHeader = ({}: ConsumerHeaderProps) => {
     return (
-        <header className="py-4 px-8 flex justify-center bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-slate-50 border-b border-b-slate-600">
+        <header
+            className="sticky top-0 backdrop-blur-lg py-4 px-8 flex 
+        justify-center bg-opacity-80 dark:bg-opacity-80 bg-slate-50 
+        dark:bg-slate-900 border-b border-b-slate-200 
+        dark:border-b-slate-700"
+        >
             <nav className="flex flex-auto max-w-screen-xl">
                 <div className="flex-auto space-x-6">
                     <Link href="/" passHref>

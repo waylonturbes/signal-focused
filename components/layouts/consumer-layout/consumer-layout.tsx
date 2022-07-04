@@ -4,9 +4,9 @@ import { ConsumerHeader } from "@components";
 import type { ReactElement } from "react";
 
 interface ConsumerLayoutProps {
-  children: ReactElement;
-  title: string;
-  description: string;
+    children: ReactElement;
+    title: string;
+    description: string;
 }
 
 /**
@@ -17,22 +17,25 @@ interface ConsumerLayoutProps {
  * @returns { ReactElement } Layout for a cosumer page.
  */
 const ConsumerLayout = ({
-  children,
-  title,
-  description,
+    children,
+    title,
+    description,
 }: ConsumerLayoutProps) => {
-  return (
-    <div className="min-h-screen flex flex-col">
-      <Head>
-        <title>{title}</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content={description} />
-      </Head>
-      <ConsumerHeader />
-      <main>{children}</main>
-      <footer>Footer</footer>
-    </div>
-  );
+    return (
+        <div className="min-h-screen flex flex-col">
+            <Head>
+                <title>{title}</title>
+                <meta
+                    name="viewport"
+                    content="initial-scale=1.0, width=device-width"
+                />
+                <meta name="description" content={description} />
+            </Head>
+            <ConsumerHeader />
+            <main className="flex-auto">{children}</main>
+            <footer>Footer</footer>
+        </div>
+    );
 };
 
 export { ConsumerLayout };
