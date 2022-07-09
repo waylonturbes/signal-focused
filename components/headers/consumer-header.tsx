@@ -9,34 +9,38 @@ interface ConsumerHeaderProps {}
  * @returns { JSX.Element } A header element with navigation links for a cosumer page.
  */
 const ConsumerHeader = ({}: ConsumerHeaderProps) => {
-    return (
-        <header
-            className="sticky top-0 backdrop-blur-lg py-4 px-8 flex 
-        justify-center bg-opacity-80 dark:bg-opacity-80 bg-slate-50 
-        dark:bg-slate-900 border-b border-b-slate-200 
+  return (
+    <header
+      className="sticky top-0 backdrop-blur-lg h-16 px-8 flex justify-center
+        bg-opacity-80 dark:bg-opacity-80 bg-slate-50
+        dark:bg-slate-900 border-b border-b-slate-200
         dark:border-b-slate-700"
-        >
-            <nav className="flex flex-auto max-w-screen-xl">
-                <div className="flex-auto space-x-6">
-                    <Link href="/" passHref>
-                        <a className="nav-link">Home</a>
-                    </Link>
-                    <Link href="/articles" passHref>
-                        <a className="nav-link">Articles</a>
-                    </Link>
-                    <Link href="/about" passHref>
-                        <a className="nav-link">About</a>
-                    </Link>
-                </div>
-                <div className="space-x-6">
-                    <ThemeToggle />
-                    <Link href="/sign-in" passHref>
-                        <a className="nav-link">Sign In</a>
-                    </Link>
-                </div>
-            </nav>
-        </header>
-    );
+    >
+      <nav className="flex flex-auto max-w-screen-xl justify-between">
+        <div className="space-x-6 my-auto">
+          <Link href="/" passHref>
+            <a className="nav-link">Home</a>
+          </Link>
+          <Link href="/articles" passHref>
+            <a className="nav-link">Articles</a>
+          </Link>
+          <Link href="/about" passHref>
+            <a className="nav-link">About</a>
+          </Link>
+        </div>
+        <div className="flex space-x-6 my-auto divide-x">
+          <div>
+            <ThemeToggle className="nav-link align-middle" />
+          </div>
+          <div className="align-middle space-x-6 pl-6">
+            <Link href="/sign-in" passHref>
+              <a className="nav-link">Sign In</a>
+            </Link>
+          </div>
+        </div>
+      </nav>
+    </header>
+  );
 };
 
 export { ConsumerHeader };
