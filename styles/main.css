@@ -6,28 +6,31 @@
 @tailwind utilities;
 
 @layer base {
-    * {
-        @apply focus:outline-1 outline-offset-4;
-    }
-    html {
-        font-family: Inter, system-ui, sans-serif;
-    }
-    body {
-        @apply bg-cover bg-center bg-signal-focused-background-light dark:bg-signal-focused-background-dark text-slate-900 dark:text-slate-50;
-    }
-    select {
-        @apply font-semibold appearance-none bg-none;
-    }
-    option {
-        @apply font-semibold rounded-md border-slate-200 dark:border-slate-700;
-    }
+  * {
+    @apply focus:outline-1 focus:outline-offset-4 focus:outline-orange-600 focus:dark:outline-orange-400;
+  }
+  html {
+    font-family: Inter, system-ui, sans-serif;
+  }
+  body {
+    @apply bg-cover bg-center bg-signal-focused-background-light dark:bg-signal-focused-background-dark text-slate-900 dark:text-slate-50;
+  }
+  select {
+    @apply font-semibold appearance-none focus:outline-1 bg-inherit;
+  }
+  option {
+    @apply font-semibold rounded-md bg-slate-50 dark:bg-slate-900 border-none;
+  }
 }
 
 @layer components {
-    .text-chaos-gradient {
-        @apply bg-clip-text text-transparent bg-gradient-to-r from-red-500 dark:from-red-400 to-orange-500 dark:to-orange-400;
-    }
-    .nav-link {
-        @apply font-semibold transition-colors duration-200 ease-linear hover:text-orange-600 hover:dark:text-orange-400;
-    }
+  .text-chaos-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-red-500 dark:from-red-400 to-orange-500 dark:to-orange-400;
+  }
+  .nav-link {
+    @apply font-semibold transition-colors duration-200 ease-linear hover:text-orange-600 hover:dark:text-orange-400;
+  }
+  .icon-btn {
+    @apply nav-link align-middle rounded-lg p-1 border border-slate-500 border-opacity-50 hover:border-opacity-50 hover:dark:border-opacity-50 hover:border-orange-600 hover:dark:border-orange-400;
+  }
 }
