@@ -13,8 +13,7 @@ const ConsumerHeader = ({}: ConsumerHeaderProps) => {
     <header
       className="sticky top-0 backdrop-blur-lg h-14 px-8 flex justify-center
         bg-opacity-75 dark:bg-opacity-75 bg-slate-50
-        dark:bg-slate-900 border-b border-b-slate-200
-        dark:border-b-slate-700"
+        dark:bg-slate-900 border-b"
     >
       <nav className="flex flex-auto max-w-screen-xl justify-between">
         <div className="space-x-6 my-auto">
@@ -28,7 +27,7 @@ const ConsumerHeader = ({}: ConsumerHeaderProps) => {
             <a className="nav-link">About</a>
           </Link>
         </div>
-        <div className="flex space-x-6 my-auto divide-x divide-slate-200 dark:divide-slate-700">
+        <div className="flex space-x-6 my-auto divide-x">
           <div>
             <ThemeToggle className="nav-link align-middle" />
           </div>

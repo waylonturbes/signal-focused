@@ -7,7 +7,7 @@
 
 @layer base {
   * {
-    @apply focus:outline-1 focus:outline-offset-4 focus:outline-orange-600 focus:dark:outline-orange-400;
+    @apply focus:outline-1 focus:outline-offset-4 focus:outline-orange-600 focus:dark:outline-orange-400 dark:border-slate-800;
   }
   html {
     font-family: Inter, system-ui, sans-serif;
