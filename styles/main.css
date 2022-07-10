@@ -13,13 +13,7 @@
     font-family: Inter, system-ui, sans-serif;
   }
   body {
-    @apply bg-cover bg-center bg-signal-focused-background-light dark:bg-signal-focused-background-dark text-slate-900 dark:text-slate-50;
-  }
-  select {
-    @apply font-semibold appearance-none focus:outline-1 bg-inherit;
-  }
-  option {
-    @apply font-semibold rounded-md bg-slate-50 dark:bg-slate-900 border-none;
+    @apply bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100;
   }
 }
 
