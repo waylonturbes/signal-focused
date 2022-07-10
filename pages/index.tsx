@@ -13,6 +13,7 @@ const Home: NextPageWithLayout = () => {
         <p className="text-xl">
           Read articles on fantasy football, video games, cooking, and more.
         </p>
+        <button className="btn">Start Browsing</button>
       </div>
     </>
   );

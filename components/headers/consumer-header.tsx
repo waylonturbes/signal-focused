@@ -12,7 +12,7 @@ const ConsumerHeader = ({}: ConsumerHeaderProps) => {
   return (
     <header
       className="sticky top-0 backdrop-blur-lg h-14 px-8 flex justify-center
-        bg-opacity-75 dark:bg-opacity-75 bg-slate-50
+        bg-opacity-75 dark:bg-opacity-75 bg-slate-300
         dark:bg-slate-900 border-b"
     >
       <nav className="flex flex-auto max-w-screen-xl justify-between">
