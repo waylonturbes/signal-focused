@@ -7,7 +7,7 @@ import Link from "next/link";
 const Home: NextPageWithLayout = () => {
   return (
     <>
-      <div className="text-center py-32 px-6 border-b">
+      <div className="text-center py-32 px-6 border-b bg-slate-200 dark:bg-slate-900 bg-gradient-to-b from-slate-50 dark:from-slate-800">
         <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black mb-6">
           Seeing Through
           <br /> the <span className="text-chaos-gradient">Chaos</span>
@@ -22,8 +22,8 @@ const Home: NextPageWithLayout = () => {
           </button>
         </Link>
       </div>
-      <div className="text-center py-32 px-6 border-b bg-slate-50 dark:bg-slate-900"></div>
-      <div className="text-center py-32 px-6 border-b"></div>
+      <div className="text-center py-32 px-6 border-b bg-slate-200 dark:bg-slate-900 bg-gradient-to-t from-slate-50 dark:from-slate-800"></div>
+      <div className="text-center py-32 px-6 border-b bg-slate-200 dark:bg-slate-900 bg-gradient-to-b from-slate-50 dark:from-slate-800"></div>
     </>
   );
 };
