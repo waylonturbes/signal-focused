@@ -12,8 +12,7 @@ const ConsumerHeader = ({}: ConsumerHeaderProps) => {
   return (
     <header
       className="sticky top-0 backdrop-blur-lg h-14 px-8 flex justify-center
-        bg-opacity-75 dark:bg-opacity-75 bg-slate-50
-        dark:bg-slate-900 border-b"
+      bg-slate-900/90 dark:bg-black/60 text-slate-100 border-b"
     >
       <nav className="flex flex-auto max-w-screen-xl justify-between">
         <div className="space-x-6 my-auto">
