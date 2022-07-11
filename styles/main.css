@@ -1,19 +1,21 @@
 /* Inter Google Font Import */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-@tailwind utilities;
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 @layer utilities {
   .custom-transition {
     @apply transition-all duration-150 ease-linear;
   }
   .custom-border {
-    @apply border hover:border-orange-600 hover:dark:border-orange-400 active:border-orange-600 active:dark:border-orange-400;
+    @apply border hover:border-orange-600 hover:dark:border-orange-400
+    active:border-orange-600 active:dark:border-orange-400;
   }
   .custom-text {
-    @apply hover:text-orange-600 hover:dark:text-orange-400 active:text-orange-600 active:dark:text-orange-400;
+    @apply hover:text-orange-600 hover:dark:text-orange-400 active:text-orange-600
+    active:dark:text-orange-400;
   }
 }
 
@@ -30,19 +32,35 @@
 }
 
 @layer components {
+  /* Typography */
   .text-chaos-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-red-500 dark:from-red-400 to-orange-500 dark:to-orange-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-red-500 dark:from-red-400
+    to-orange-500 dark:to-orange-400;
   }
   .nav-link {
     @apply custom-transition custom-text font-semibold;
   }
   /* Buttons */
   .btn {
-    @apply nav-link custom-border custom-transition py-2 px-4 bg-slate-500/10 backdrop-blur-xl rounded-lg active:bg-orange-600/10;
+    @apply nav-link custom-border custom-transition py-2 px-4 bg-slate-900/10
+    dark:bg-slate-50/10 backdrop-blur-xl rounded-lg active:bg-orange-600/10;
   }
-  .icon-btn {
-    @apply btn align-middle p-1;
+  .btn-lg {
+    @apply px-6 py-3;
   }
   .btn-primary {
+    @apply border-2 text-orange-50 hover:text-orange-50 hover:dark:text-orange-50 bg-gradient-to-r
+    from-red-500 dark:from-red-400 to-orange-500 dark:to-orange-400 border-orange-500
+    dark:border-orange-400 hover:border-orange-900 hover:dark:border-orange-50;
+  }
+  .btn-with-icon {
+    @apply flex justify-between;
+  }
+  .icon-btn {
+    @apply btn p-1;
+  }
+  /* Icons */
+  .left-btn-icon {
+    @apply my-auto ml-1 h-5 w-5;
   }
 }
