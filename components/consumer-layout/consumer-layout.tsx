@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { ConsumerHeader } from "@components";
+import { ConsumerHeader, ConsumerFooter } from "@components";
 import type { ReactElement } from "react";
 
 interface ConsumerLayoutProps {
@@ -30,7 +30,7 @@ const ConsumerLayout = ({
       </Head>
       <ConsumerHeader />
       <main className="flex-auto">{children}</main>
-      <footer>Footer</footer>
+      <ConsumerFooter />
     </div>
   );
 };

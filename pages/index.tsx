@@ -23,6 +23,7 @@ const Home: NextPageWithLayout = () => {
         </Link>
       </div>
       <div className="text-center py-32 px-6 border-b bg-slate-50 dark:bg-slate-900"></div>
+      <div className="text-center py-32 px-6 border-b"></div>
     </>
   );
 };

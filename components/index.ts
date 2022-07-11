@@ -1,6 +1,8 @@
 /** LAYOUTS */
-export { ConsumerLayout } from "./layouts/consumer-layout/consumer-layout";
+export { ConsumerLayout } from "./consumer-layout/consumer-layout";
 /** HEADERS */
-export { ConsumerHeader } from "./headers/consumer-header";
+export { ConsumerHeader } from "./consumer-header/consumer-header";
 /** INPUTS */
-export { ThemeToggle } from "./inputs/theme-toggle/theme-toggle";
+export { ThemeToggle } from "./theme-toggle/theme-toggle";
+/** FOOTERS */
+export { ConsumerFooter } from "./consumer-footer/consumer-footer";
